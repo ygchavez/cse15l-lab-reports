@@ -9,3 +9,6 @@ Cat on computer:
 
 ---
 `Cat on computer`
+
+---
+`Cats are cooler than dogs`
