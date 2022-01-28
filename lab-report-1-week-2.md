@@ -34,6 +34,12 @@ gives the directory in a long format
 
  gives a copy of that file
 
+`cd~`
+
+`cd`
+
+`ls-a`
+
 
 ## 4. Moving Files With scp
 To copy a file from my computer to a remote computer I used the command scp. To display this I created a file called WhereAmI.java with the following code : 
@@ -51,7 +57,7 @@ Meaning that the directories are different compared to my computer. This was the
 ## 5.Setting an SSH Key
 ![Image](img8.png)
 
-Running ssh-key on VS Code allows it to save at the default location.
+Running ssh-key on VS Code allows it to save at the default location. Creating a private and public key on my computer.
 
 
 ![Image](img7.png)
@@ -79,7 +85,7 @@ Keystroke count:
 * 3 strokes to click up button to select `javac WhereAmI.java`
 * 3 stroke to open notes app and paste `javac WhereAmI.java` and put quotation marks around it
 * 2 strokes to add a semi colon after `javac WhereAmI.java`
-* 4 stroke to copy and paste `java WhereAmI` 
+* 4 stroke to copy and paste and repeat with`java WhereAmI` 
 
 For a total of 20 keystrokes
 
