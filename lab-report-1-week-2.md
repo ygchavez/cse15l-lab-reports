@@ -7,7 +7,8 @@ I looked up my course specific account on [https://sdacs.ucsd.edu/~icc/index.php
 ## 2. Remotely Connecting
 ![Image](img2.png)
 I opened the terminal and typed in 
->$ ssh cs15lwi22aia@ieng6.ucsd.edu
+
+`$ ssh cs15lwi22aia@ieng6.ucsd.edu`
 
 to connect to the remote server. After entering the new password I created I received this. This means that now I the *client* and the *server* are connected.
 ## 3. Trying Some Commands
@@ -15,9 +16,23 @@ to connect to the remote server. After entering the new password I created I rec
 
 
 Some commands I ran are 
-* ls directory, this returned lists all files and folders in that directory * ls lat, 
-* ls-l, gives the directory in a long format
-* cat *file*, gives a copy of that file
+
+
+`ls directory`
+
+
+this returned lists all files and folders in that directory * ls lat,
+
+
+`ls-l`
+
+
+gives the directory in a long format
+
+
+`cat *file*`
+
+ gives a copy of that file
 
 
 ## 4. Moving Files With scp
@@ -35,5 +50,13 @@ Meaning that the directories are different compared to my computer. This was the
 
 ## 5.Setting an SSH Key
 ![Image](img7.png)
+![Image](img8.png)
 
 ## 6.Optimizing Remote Running
+To optimize remote running you can use semicolons to run multiple commands on the same line
+
+
+`$ cp hello.java OtherMain.java; javac OtherMain.java; java hello
+`
+
+![Image](img9.png)
