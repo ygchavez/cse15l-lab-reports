@@ -5,6 +5,8 @@
 
 Symptom: 
 ```
+C:\Users\yulianachavez\Desktop\Documents\GitHub\markdown-parse> java MarkdownParse test-file5.md
+
 Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 10, end -1, length 33
 ```
 We made `int closeParen` be equal to `markdown.indexOf(")", openParen)`. This caused an error that `end -1` was unable to find and end parenthesis returning `-1`.
