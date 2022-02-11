@@ -5,7 +5,7 @@
 
 Symptom: 
 ```
-C:\Users\yulianachavez\Desktop\Documents\GitHub\markdown-parse> java MarkdownParse test-file5.md
+C:\Users\yulianachavez\Desktop\Documents\GitHub\markdown-parse> java MarkdownParse test-file1.md
 
 Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 10, end -1, length 33
 ```
@@ -15,7 +15,7 @@ We made `int closeParen` be equal to `markdown.indexOf(")", openParen)`. This ca
 ![Image](codechange2.png)
 Symptom: 
 ```
-PS C:\Users\yulianachavez\Desktop\Documents\GitHub\markdown-parse> java MarkdownParse test-file5.md
+PS C:\Users\yulianachavez\Desktop\Documents\GitHub\markdown-parse> java MarkdownParse test-file2.md
 []
 ```
 An edge case we found was that the code did not work correctly with empty brackets `[]` or parenthesis `()`causing an empty set to be returned.
@@ -24,6 +24,8 @@ An edge case we found was that the code did not work correctly with empty bracke
 ![Image](codechange3.0.png)
 Symptom: 
 ```
+C:\Users\yulianachavez\Desktop\Documents\GitHub\markdown-parse> java MarkdownParse test-file3.md
+
 Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 3 at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4601)
 ```
 There is no interpretation if there was a link. When no parenthesis were found a `-1` was returned causing this to be a failure inducing input.  
