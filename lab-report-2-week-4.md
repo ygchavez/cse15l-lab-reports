@@ -5,7 +5,8 @@
 
 Symptom: 
 ```
-C:\Users\yulianachavez\Desktop\Documents\GitHub\markdown-parse> java MarkdownParse test-file1.md
+PS C:\Users\yulianachavez\Desktop\Documents\GitHub\markdown-parse>javac MarkdownParse.java
+PS C:\Users\yulianachavez\Desktop\Documents\GitHub\markdown-parse> java MarkdownParse test-file1.md
 
 Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 10, end -1, length 33
 ```
@@ -15,6 +16,7 @@ We made `int closeParen` be equal to `markdown.indexOf(")", openParen)`. This ca
 ![Image](codechange2.png)
 Symptom: 
 ```
+PS C:\Users\yulianachavez\Desktop\Documents\GitHub\markdown-parse>javac MarkdownParse.java
 PS C:\Users\yulianachavez\Desktop\Documents\GitHub\markdown-parse> java MarkdownParse test-file2.md
 []
 ```
@@ -24,7 +26,9 @@ An edge case we found was that the code did not work correctly with empty bracke
 ![Image](codechange3.0.png)
 Symptom: 
 ```
-C:\Users\yulianachavez\Desktop\Documents\GitHub\markdown-parse> java MarkdownParse test-file3.md
+PS C:\Users\yulianachavez\Desktop\Documents\GitHub\markdown-parse>javac MarkdownParse.java
+
+PS C:\Users\yulianachavez\Desktop\Documents\GitHub\markdown-parse> java MarkdownParse test-file3.md
 
 Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 3 at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4601)
 ```
