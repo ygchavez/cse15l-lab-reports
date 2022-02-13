@@ -16,7 +16,7 @@ We made `int closeParen` be equal to `markdown.indexOf(")", openParen)`. This ca
 ![Image](codechange2.png)
 Symptom: 
 ```
-PS C:\Users\yulianachavez\Desktop\Documents\GitHub\markdown-parse>javac MarkdownParse.java
+PS C:\Users\yulianachavez\Desktop\Documents\GitHub\markdown-parse>javac MarkdownParse.java 
 PS C:\Users\yulianachavez\Desktop\Documents\GitHub\markdown-parse> java MarkdownParse test-file2.md
 []
 ```
