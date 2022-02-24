@@ -14,6 +14,6 @@ I am able to edit the config file in the terminal as shown below and added these
 ![Image](img10.png)
 
 ## 2. Logging into account with `ssh` command
-
-
+![Image](img11.png)
+![Image](img12.png)
 ## 3. Copying a file with `scp` command
