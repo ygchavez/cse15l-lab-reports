@@ -14,3 +14,6 @@ I am able to edit the config file in the terminal as shown below and added these
 ![Image](img10.png)
 
 ## 2. Logging into account with `ssh` command
+
+
+## 3. `scp` command copying a file to account using alias
