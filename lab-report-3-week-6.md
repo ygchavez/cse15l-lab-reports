@@ -16,4 +16,4 @@ I am able to edit the config file in the terminal as shown below and added these
 ## 2. Logging into account with `ssh` command
 
 
-## 3. `scp` command copying a file to account using alias
+## 3. Copying a file with `scp` command
