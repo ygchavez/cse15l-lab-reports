@@ -5,3 +5,7 @@ To find the tests with different results my group made the directories, my_week1
 I added bash scripts to both my_week10 and week10 directories to print out the respective file and their outputs. 
 
 Then I ran `diff ~/week10/markdown-parse/week10.txt ~/my_week10/markdown-parse/my_results.txt > differences.txt` to get a text file with the differences between the two output files. I also used `vimdiff ~/week10/markdown-parse/week10.txt ~/my_week10/markdown-parse/my_results.txt` to get a view of the differences. 
+
+## Test 1 [41.md](https://github.com/ucsd-cse15l-w22/markdown-parse/blob/main/test-files/41.md)
+
+## Test 2 [22.md](https://github.com/ucsd-cse15l-w22/markdown-parse/blob/main/test-files/22.md)
