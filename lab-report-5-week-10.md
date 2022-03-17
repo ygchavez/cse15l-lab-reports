@@ -17,14 +17,14 @@ Expected Output: `[]`
 Mr. Politz's implementation correctly got the desired output for 41.md. This is because the "a" doesn't show up as a link, so there is no link to put in, so his is correct when it returns `[]`.
 
 ### Incorrect Implementation
-For my implementation of markdown parse, I can fix it by adding code to see whether there's a `"&quot;"` in between the quotes. Basically, whenever any part of the "link" has a space in it and a `"&quot;"`, it isn't supposed to be counted as a link, yet mine keeps going on and gets all of the link to the end. Therefore, in this section of my code - 
+I can fix my code by adding code to see whether there's a `"&quot;"` in between the quotes. When the "link" has a space in it and a `"&quot;"`, it isn't supposed to be counted as a link but keeps going on and gets all of the link to the end. In this code:
 ```
             int openParen = line.indexOf("(", currentIndex);
             int closeParen = line.indexOf(")", openParen);
             toReturn.add(line.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
 ```
-I can add a line checking specifically for a space and `&quot;` between the index at openParen and that of closeParen and if it exists, then I should just return the quote from openParen, which would be nothing. 
+I can add a line checking for a space and `&quot;` between the index at openParen and that of closeParen and if it exists, then I should just return the quote from openParen.
 
 ## Test 2 [22.md](https://github.com/ucsd-cse15l-w22/markdown-parse/blob/main/test-files/22.md)
 
