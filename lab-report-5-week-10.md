@@ -27,3 +27,11 @@ For my implementation of markdown parse, I can fix it by adding code to see whet
 I can add a line checking specifically for a space and `&quot;` between the index at openParen and that of closeParen and if it exists, then I should just return the quote from openParen, which would be nothing. 
 
 ## Test 2 [22.md](https://github.com/ucsd-cse15l-w22/markdown-parse/blob/main/test-files/22.md)
+
+Result: `[/bar\* "ti\*tle"]`
+
+Expected Output: `[ "/bar*" ]`
+
+For this test there is no valid link as there are characters between the brackets and parentheses and the second one is missing a parentheses. The method should return an empty array. My implementation could be fixed by adding a split statement on the substring, checking if the second param is a valid string and passing the first element i.e. if the substring follows ```<link> ["optional hover text"]``` where the quotes are necessary.
+
+![Image](img15.png)
