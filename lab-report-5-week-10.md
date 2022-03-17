@@ -32,6 +32,9 @@ Result: `[/bar\* "ti\*tle"]`
 
 Expected Output: `[ "/bar*" ]`
 
-For this test there is no valid link as there are characters between the brackets and parentheses and the second one is missing a parentheses. The method should return an empty array. My implementation could be fixed by adding a split statement on the substring, checking if the second param is a valid string and passing the first element i.e. if the substring follows ```<link> ["optional hover text"]``` where the quotes are necessary.
+For this test there is no valid link as there are characters between the brackets and parentheses and the second one is missing a parentheses. The method should return an empty array. 
+
+### Incorrect Implementation
+My implementation could be fixed by adding a split statement on the substring, checking if the second param is a valid string and passing the first element i.e. if the substring follows ```<link> ["optional hover text"]``` where the quotes are necessary.
 
 ![Image](img15.png)
