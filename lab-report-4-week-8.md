@@ -6,7 +6,7 @@
 [Reviewed markdown-parse Repository](https://github.com/Alexander-Kourjanski/markdown-parse)
 
 ## Snippet 1
-### This should produce:
+### This should produce: l
 ```
 [`google.com, google.com, ucsd.edu]
 ```
